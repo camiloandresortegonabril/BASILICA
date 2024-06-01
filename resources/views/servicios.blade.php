@@ -9,7 +9,7 @@
                 <div class="card w- 40 bg-base-100 shadow-xl">
                     {{-- Aquí, desde donde inicia figure hasta donde termina, solo tendría que cambiar el url --}}
                     <figure>
-                        <img src="https://s1.significados.com/foto/software-og.jpg" alt="Shoes" />
+                        <img src="https://assets-global.website-files.com/62eb542250d6566e8b77a3d0/6445a0c9f178cf351f680ed1_disciplinas.webp" alt="Shoes" />
                     </figure>
 
                     <div class="card-body items-center text-center">

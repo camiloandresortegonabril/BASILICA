@@ -41,12 +41,12 @@ Route::get('/portafolio', function () {
 Route::get('/servicios', function () {
     $servicios = [
         
-        ['nombre' => 'SOFWARE PARA EMPRESAS DE DISEÑO', 'descripcion' => 'creamos opciones practicas para  tus proyectos'],
-        ['nombre' => 'CREATIVE SCHOOL', 'descripcion' => 'por que pensamos en nuestros niños creamos aplicacones para ellos'],
-        ['nombre' => 'SOFWARE ADMINISTRATIVO', 'descripcion' => 'creamos soporte y asignacion de proyectos para tu empresa '],
-        ['nombre' => 'SOFWARE PARA NIÑOS', 'descripcion' => 'opciones didacticas para niños'],
-        ['nombre' => 'DIAGRAMACION', 'descripcion' => 'por que pensamos  etn ti  creamos sofware para  diagramar  tus ideas '],
-        ['nombre' => 'SOFWARE PARA PEQUEÑOS EMPRENDEDORES', 'descripcion' => 'creamos tu sofware de acuerdo  a tus necesidades'],
+        ['nombre' => 'SOPORTE DE  SOFWARE PARA EMPRESAS', 'descripcion' => 'creamos opciones practicas para  tus proyectos'],
+        ['nombre' => 'CREACION DE CONTENIDO EDUCATIVO', 'descripcion' => 'por que pensamos en nuestros niños creamos aplicacones para ellos'],
+        ['nombre' => 'CREACION DE  SOFWARE CONTABLE ', 'descripcion' => 'creamos soporte y asignacion de proyectos para tu empresa '],
+        ['nombre' => 'CREACION DE  SOFWARE CORPORATIVO', 'descripcion' => 'opciones didacticas para niños'],
+        ['nombre' => 'CREACION DE  SOFWARE MERCANTIL', 'descripcion' => 'por que pensamos  etn ti  creamos sofware para  diagramar  tus ideas '],
+        ['nombre' => 'CREACION DE PROTOTIPADO ', 'descripcion' => 'creamos tu sofware de acuerdo  a tus necesidades'],
     ];
 
     return view('servicios', ['servicios' => $servicios]);
