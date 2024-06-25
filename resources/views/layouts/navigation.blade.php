@@ -14,10 +14,10 @@
 
                         <!-- Navigation Links -->
                         <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                            <x-nav-link :href="route('portafolio')" :active="request()->routeIs('portafolio')">
+                            <x-nav-link :href="route('portafolios.index')" :active="request()->routeIs('portafolios.index')">
                                 {{ __('Portafolio') }}
                             </x-nav-link>
-                            <x-nav-link :href="route('servicios')" :active="request()->routeIs('servicios')">
+                            <x-nav-link :href="route('servicios.index')" :active="request()->routeIs('servicios.index')">
                                 {{ __('Servicios') }}
                             </x-nav-link>
                             <x-nav-link :href="route('nosotros')" :active="request()->routeIs('nosotros')">
@@ -38,10 +38,10 @@
 
                             <!-- Navigation Links -->
                             <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                                <x-nav-link :href="route('portafolio')" :active="request()->routeIs('portafolio')">
+                                <x-nav-link :href="route('portafolios.index')" :active="request()->routeIs('portafolios.index')">
                                     {{ __('Portafolio') }}
                                 </x-nav-link>
-                                <x-nav-link :href="route('servicios')" :active="request()->routeIs('servicios')">
+                                <x-nav-link :href="route('servicios.index')" :active="request()->routeIs('servicios.index')">
                                     {{ __('Servicios') }}
                                 </x-nav-link>
                                 <x-nav-link :href="route('nosotros')" :active="request()->routeIs('nosotros')">
@@ -62,10 +62,10 @@
 
                         <!-- Navigation Links -->
                         <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                            <x-nav-link :href="route('portafolio')" :active="request()->routeIs('portafolio')">
+                            <x-nav-link :href="route('portafolios.index')" :active="request()->routeIs('portafolios.index')">
                                 {{ __('Portafolio') }}
                             </x-nav-link>
-                            <x-nav-link :href="route('servicios')" :active="request()->routeIs('servicios')">
+                            <x-nav-link :href="route('servicios.index')" :active="request()->routeIs('servicios.index')">
                                 {{ __('Servicios') }}
                             </x-nav-link>
                             <x-nav-link :href="route('nosotros')" :active="request()->routeIs('nosotros')">
@@ -79,13 +79,7 @@
             @if (Route::has('login'))
                 @auth
                         <div class="hidden sm:flex sm:items-center sm:ms-6">
-                            <div class="shrink-0 flex items-center">
-                                <a href="{{ route('carrito.index') }}">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                                      </svg>                                      
-                                </a>
-                            </div>
+                            
                             <x-dropdown align="right" width="48">
                                 <x-slot name="trigger">
                                     <button class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none transition ease-in-out duration-150">
@@ -164,10 +158,10 @@
         @auth
             <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
                 <div class="pt-2 pb-3 space-y-1">
-                    <x-responsive-nav-link :href="route('portafolio')" :active="request()->routeIs('portafolio')">
+                    <x-responsive-nav-link :href="route('portafolios.index')" :active="request()->routeIs('portafolios.index')">
                         {{ __('Portafolio') }}
                     </x-responsive-nav-link>
-                    <x-nav-link :href="route('servicios')" :active="request()->routeIs('servicios')">
+                    <x-nav-link :href="route('servicios.index')" :active="request()->routeIs('servicios.index')">
                         {{ __('Servicios') }}
                     </x-nav-link>
                     <x-responsive-nav-link :href="route('nosotros')" :active="request()->routeIs('nosotros')">
@@ -205,10 +199,10 @@
             @else
                 <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
                     <div class="pt-2 pb-3 space-y-1">
-                        <x-responsive-nav-link :href="route('portafolio')" :active="request()->routeIs('portafolio')">
+                        <x-responsive-nav-link :href="route('portafolios.index')" :active="request()->routeIs('portafolios.index')">
                             {{ __('Portafolio') }}
                         </x-responsive-nav-link>
-                        <x-nav-link :href="route('servicios')" :active="request()->routeIs('servicios')">
+                        <x-nav-link :href="route('servicios.index')" :active="request()->routeIs('servicios.index')">
                             {{ __('Servicios') }}
                         </x-nav-link>
                         <x-responsive-nav-link :href="route('nosotros')" :active="request()->routeIs('nosotros')">

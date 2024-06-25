@@ -20,7 +20,7 @@
         </div>
     </div>
 </div>
-        {{--TRABAJE AQUÍ, DENTRO DEL DIV, NO TOCAR EL X-APP-LAYOUT --}}
+       
         
 
         <h1 class="text-black text-center my-5">Basilicad Innovación en Diseño y Desarrollo Digital
